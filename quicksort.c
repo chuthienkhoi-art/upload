@@ -37,9 +37,10 @@ int main() {
     quickSort(arr, 0, n - 1, n);
     printf("Kết quả cuối cùng: ");
     printArray(arr, n);
-    printf("\n=== ĐỘ PHỨC TẠP THUẬT TOÁN ===\n");
+    printf("\nĐỘ PHỨC TẠP THUẬT TOÁN\n");
     printf("Trung bình khi chia gần đều: O(n log n)\n");
     printf("Tốt nhất khi chia đều tất cả các bước:   O(n log n)\n");
     printf("Xấu nhất khi luôn lệch 0 | n-1:   O(n^2)\n");
     return 0;
 }
+
