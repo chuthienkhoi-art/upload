@@ -19,7 +19,6 @@ void merge(int arr[], int h, int m, int p, int n) {
         else
             arr[k++] = R[j++];
     }
-
     while (i < n1)
         arr[k++] = L[i++];
     while (j < n2)
@@ -37,24 +36,17 @@ void mergeSort(int arr[], int l, int r, int n) {
 }
 int main() {
     int arr[100], n;
-
     printf("Nhập số phần tử của mảng: ");
     scanf("%d", &n);
-
     printf("Nhập %d phần tử: ", n);
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
-
     printf("\nSẮP XẾP TRỘN (MERGE SORT)\n");
     mergeSort(arr, 0, n - 1, n);
-
     printf("Kết quả cuối cùng: ");
     printArray(arr, n);
-
     printf("\nĐỘ PHỨC TẠP THUẬT TOÁN\n");
-    printf("Tốt nhất khi chia đều 2 bên:   O(n log n)\n");
-    printf("Trung bình khi chia tương đối đều: O(n log n)\n");
-    printf("Xấu nhất khi chia lệch về 1 bên:   O(n log n)\n");
-
+    printf("O(n log n)\n");
     return 0;
 }
+
